@@ -1,12 +1,11 @@
-import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { setIn } from "../../Utility/LocalStorage";
 
 const JobDetail = () => {
   const jobs = useLoaderData();
   const { id } = useParams();
-  const [isApply, setIsApply] = useState(false);
 
   const job = jobs.find((job) => parseInt(job.id) == id);
 
@@ -20,17 +19,12 @@ const JobDetail = () => {
     contact_information,
   } = job;
 
-  useEffect(() => {
-    const applyJobId = localStorage.getItem("job-applications");
-    if (applyJobId === id) {
-      setIsApply(true);
-    }
-  }, [id]);
+  console.log(job);
 
   const handleApplyJob = () => {
-    localStorage.setItem("job-application", id);
+    setIn(id);
+
     toast("Application succecfull!");
-    setIsApply(true);
   };
 
   return (
@@ -44,16 +38,15 @@ const JobDetail = () => {
         <div className="grid  md:grid-cols-4">
           <div className="md:col-span-3">
             <h4>
-              {" "}
               <span className="font-bold underline text-lg">
                 Job Description:
-              </span>{" "}
+              </span>
               {job_description}
             </h4>
             <h4>
               <span className="font-bold underline text-lg">
                 Job Responsibility:
-              </span>{" "}
+              </span>
               {job_responsibility}
             </h4>
             <span className="font-bold underline text-lg">

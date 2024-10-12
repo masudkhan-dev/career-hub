@@ -21,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/applied",
         element: <AppliedJobs />,
+        loader: async () => {
+          const res = await axios.get("/jobs.json");
+          return res.data;
+        },
       },
       {
         path: "/job/:id",
