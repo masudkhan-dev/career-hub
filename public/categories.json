@@ -1,31 +1,26 @@
 [
-    {
-        "id":1,
-        "logo":"https://i.ibb.co/NyW6vSW/accounts-1.png",
-        "category_name":"Account & Finance",
-        "availability":"300 Jobs Available"
-
-    },
-    {
-        "id":2,
-        "logo":"https://i.ibb.co/PC8JwL3/chip-1.png",
-        "category_name":"Creative Design",
-        "availability":"100+ Jobs Available"
-
-    },
-    {
-        "id":3,
-        "logo":"https://i.ibb.co/H4f5ZCp/Group-13.png",
-        "category_name":"Marketing & Sales",
-        "availability":"150 Jobs Available"
-
-    },
-    {
-        "id":4,
-        "logo":"https://i.ibb.co/72841P4/social-media-1.png",
-        "category_name":"Engineering Job",
-        "availability":"224 Jobs Available"
-
-    }
-
+  {
+    "id": 1,
+    "logo": "https://cdn-icons-png.flaticon.com/512/1176/1176289.png",
+    "category_name": "Account & Finance",
+    "availability": "300 Jobs Available"
+  },
+  {
+    "id": 2,
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk56N_UCLJmQwuDtz6kWhPuonQB6FJhuP_IQ&s",
+    "category_name": "Creative Design",
+    "availability": "100+ Jobs Available"
+  },
+  {
+    "id": 3,
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ0mcA9Hm4GsMrZxjAvjHJgx1K404JN6n4PQ&s",
+    "category_name": "Marketing & Sales",
+    "availability": "150 Jobs Available"
+  },
+  {
+    "id": 4,
+    "logo": "https://png.pngtree.com/png-vector/20230316/ourmid/pngtree-chip-line-icon-vector-png-image_6650589.png",
+    "category_name": "Engineering Job",
+    "availability": "224 Jobs Available"
+  }
 ]

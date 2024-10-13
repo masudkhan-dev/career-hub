@@ -7,7 +7,9 @@ const JobDetail = () => {
   const jobs = useLoaderData();
   const { id } = useParams();
 
-  const job = jobs.find((job) => parseInt(job.id) == id);
+  const idInt = parseInt(id);
+
+  const job = jobs.find((job) => job.id == idInt);
 
   const {
     job_description,
@@ -22,7 +24,7 @@ const JobDetail = () => {
   console.log(job);
 
   const handleApplyJob = () => {
-    setIn(id);
+    setIn(idInt);
 
     toast("Application succecfull!");
   };
